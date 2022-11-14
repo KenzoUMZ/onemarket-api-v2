@@ -3,8 +3,8 @@ const mongoose = require('mongoose')
 const Market = mongoose.model('Market', {
     name: String,
     cnpj: String,
-    location: Map,
-    products: Map,
+    location: Object,
+    products: String,
     thumbnail: String,
 })
 
