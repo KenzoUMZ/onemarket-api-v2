@@ -13,7 +13,7 @@ routes.use('/markets', marketRouter);
 
 
 
-routes.get('/health', (req, res) => {
+routes.get('/', (req, res) => {
   res.status(200).send({
     status: 'Market API connector is okay!',
   })
